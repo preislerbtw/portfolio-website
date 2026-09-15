@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #050609;
+  --color-surface: #12151d;
+  --color-surface-2: #191d27;
+  --color-line: rgba(245, 246, 248, 0.08);
+  --color-line-strong: rgba(245, 246, 248, 0.16);
+  --color-ink: #f5f6f8;
+  --color-muted: rgba(245, 246, 248, 0.6);
+  --color-faint: rgba(245, 246, 248, 0.4);
+  --color-accent: #3b82f6;
+  --color-accent-soft: rgba(59, 130, 246, 0.12);
+  --color-accent-line: rgba(59, 130, 246, 0.4);
+
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root.light {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-surface-2: #eef0f4;
+  --color-line: rgba(10, 13, 20, 0.08);
+  --color-line-strong: rgba(10, 13, 20, 0.16);
+  --color-ink: #0b0d12;
+  --color-muted: rgba(10, 13, 20, 0.62);
+  --color-faint: rgba(10, 13, 20, 0.42);
+  --color-accent: #2563eb;
+  --color-accent-soft: rgba(37, 99, 235, 0.1);
+  --color-accent-line: rgba(37, 99, 235, 0.35);
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased transition-colors duration-300;
+    background-image: radial-gradient(circle at 15% 0%, rgba(59, 130, 246, 0.08), transparent 45%);
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: #05070b;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-line-strong);
+    border-radius: 999px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-accent;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .bg-grid {
+    background-image:
+      radial-gradient(ellipse 70% 55% at 50% 0%, transparent 0%, var(--color-bg) 78%),
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 100% 100%, 44px 44px, 44px 44px;
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
