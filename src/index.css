@@ -12,6 +12,7 @@
   --color-accent: #3b82f6;
   --color-accent-soft: rgba(59, 130, 246, 0.12);
   --color-accent-line: rgba(59, 130, 246, 0.4);
+  --color-glow: rgba(255, 255, 255, 0.05);
 
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
@@ -29,6 +30,7 @@
   --color-accent: #2563eb;
   --color-accent-soft: rgba(37, 99, 235, 0.1);
   --color-accent-line: rgba(37, 99, 235, 0.35);
+  --color-glow: rgba(10, 13, 20, 0.05);
 }
 
 @layer base {
@@ -42,9 +44,11 @@
 
   body {
     @apply bg-bg text-ink font-sans antialiased transition-colors duration-300;
-    body {
-    background-image: radial-gradient(circle at 15% 0%, rgba(255, 255, 255, 0.05), transparent 45%);
-}
+    background-image: radial-gradient(
+      circle at 15% 0%,
+      var(--color-glow),
+      transparent 45%
+    );
   }
 
   ::selection {
@@ -77,9 +81,9 @@
   background-image:
     radial-gradient(circle 800px at 50% 0%, rgba(148, 155, 168, 0.22), transparent 70%),
     radial-gradient(ellipse 75% 60% at 50% 0%, transparent 0%, var(--color-bg) 82%),
-    linear-gradient(to right, var(--color-line-strong) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-line-strong) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+    repeating-linear-gradient(to right, var(--color-line-strong) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(to bottom, var(--color-line-strong) 0 1px, transparent 1px 44px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
   background-position: 0 0, 0 0, 0 0, 0 0;
 }
 }

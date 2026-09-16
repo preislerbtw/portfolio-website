@@ -1,26 +1,6 @@
-import { useEffect, useState } from "react";
-import { Menu, Moon, Sun, X } from "lucide-react";
-
-function ThemeToggle() {
-  const [dark, setDark] = useState(() =>
-    document.documentElement.classList.contains("dark"),
-  );
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
-
-  return (
-    <button
-      type="button"
-      className="text-ink"
-      aria-label={dark ? "Ativar tema claro" : "Ativar tema escuro"}
-      onClick={() => setDark((value) => !value)}
-    >
-      {dark ? <Sun size={20} /> : <Moon size={20} />}
-    </button>
-  );
-}
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
