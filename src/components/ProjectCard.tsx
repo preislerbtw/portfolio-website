@@ -32,12 +32,12 @@ export function ProjectCard({ project }: { project: Project }) {
 
         <div className="mt-auto flex items-center justify-between border-t border-line pt-4">
           <div>
-            <p className="text-[11px] uppercase tracking-wide text-faint">
+            {/* <p className="text-[11px] uppercase tracking-wide text-faint">
               {project.year}
-            </p>
-            <p className="text-sm font-semibold text-accent">
+            </p> */}
+            {/* <p className="text-sm font-semibold text-accent">
               {project.status}
-            </p>
+            </p> */}
           </div>
 
           <div className="flex gap-2">

@@ -23,10 +23,10 @@ function ThemeToggle() {
 }
 
 const NAV_LINKS = [
-  { href: "#sobre", label: "Sobre" },
+  { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#projetos", label: "Projetos" },
-  { href: "#contato", label: "Contato" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {

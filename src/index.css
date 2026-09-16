@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #050609;
-  --color-surface: #12151d;
-  --color-surface-2: #191d27;
-  --color-line: rgba(245, 246, 248, 0.08);
-  --color-line-strong: rgba(245, 246, 248, 0.16);
-  --color-ink: #f5f6f8;
-  --color-muted: rgba(245, 246, 248, 0.6);
-  --color-faint: rgba(245, 246, 248, 0.4);
+  --color-bg: #050505;
+  --color-surface: #141414;
+  --color-surface-2: #1c1c1c;
+  --color-line: rgba(245, 245, 245, 0.08);
+  --color-line-strong: rgba(245, 245, 245, 0.16);
+  --color-ink: #f5f5f5;
+  --color-muted: rgba(245, 245, 245, 0.6);
+  --color-faint: rgba(245, 245, 245, 0.4);
   --color-accent: #3b82f6;
   --color-accent-soft: rgba(59, 130, 246, 0.12);
   --color-accent-line: rgba(59, 130, 246, 0.4);
@@ -42,7 +42,9 @@
 
   body {
     @apply bg-bg text-ink font-sans antialiased transition-colors duration-300;
-    background-image: radial-gradient(circle at 15% 0%, rgba(59, 130, 246, 0.08), transparent 45%);
+    body {
+    background-image: radial-gradient(circle at 15% 0%, rgba(255, 255, 255, 0.05), transparent 45%);
+}
   }
 
   ::selection {
@@ -72,11 +74,12 @@
   }
 
   .bg-grid {
-    background-image:
-      radial-gradient(ellipse 70% 55% at 50% 0%, transparent 0%, var(--color-bg) 78%),
-      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
-    background-size: 100% 100%, 44px 44px, 44px 44px;
-    background-position: 0 0, 0 0, 0 0;
-  }
+  background-image:
+    radial-gradient(circle 800px at 50% 0%, rgba(148, 155, 168, 0.22), transparent 70%),
+    radial-gradient(ellipse 75% 60% at 50% 0%, transparent 0%, var(--color-bg) 82%),
+    linear-gradient(to right, var(--color-line-strong) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-line-strong) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+}
 }

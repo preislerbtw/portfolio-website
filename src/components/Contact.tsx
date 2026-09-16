@@ -9,35 +9,34 @@ export function Contact() {
   }
 
   return (
-    <section id="contato" className="border-t border-line bg-bg py-24 md:py-32">
+    <section id="contact" className="border-t border-line bg-bg py-24 md:py-32">
       <div className="container-page">
         <div className="mx-auto max-w-2xl rounded-3xl border border-line bg-surface p-8 text-center md:p-14">
-          <p className="eyebrow mb-4">Contato</p>
+          <p className="eyebrow mb-4">Contact</p>
           <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
-            Vamos conversar.
+            Get in Touch.
           </h2>
           <p className="mx-auto mt-4 max-w-md text-sm text-muted">
-            Aberto a oportunidades de estágio em front-end e a projetos
-            colaborativos. Me chama.
+            Open to front-end internship opportunities and collaborative projects. Get in touch.
           </p>
 
           {sent ? (
             <p className="mt-8 text-sm font-semibold text-accent">
-              Mensagem enviada. Obrigado pelo contato!
+              Message sent. Thank you for contacting us!
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4 text-left">
-              <Field id="name" label="Nome completo" placeholder="Seu nome" />
-              <Field id="email" label="E-mail" type="email" placeholder="voce@email.com" />
+              <Field id="name" label="NAME" placeholder="Your Name" />
+              <Field id="email" label="E-mail" type="email" placeholder="youremail@email.com" />
               <div>
                 <label htmlFor="message" className="mb-2 block text-xs font-semibold uppercase tracking-wide text-faint">
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   id="message"
                   required
                   rows={4}
-                  placeholder="Sobre o que você quer falar?"
+                  placeholder="What you wanna talk about?"
                   className="w-full resize-none rounded-2xl border border-line-strong bg-surface-2 px-4 py-3 text-sm text-ink placeholder:text-faint focus:border-accent focus:outline-none"
                 />
               </div>
@@ -45,7 +44,7 @@ export function Contact() {
                 type="submit"
                 className="mt-2 self-center rounded-full bg-accent px-8 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
               >
-                Enviar mensagem
+                Send Message
               </button>
             </form>
           )}

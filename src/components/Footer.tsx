@@ -12,7 +12,7 @@ export function Footer() {
             aria-label="GitHub"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-ink transition-colors hover:border-accent hover:text-accent"
           >
-            <GithubIcon size={16} />
+            <GithubIcon size={18} />
           </a>
           <a
             href="https://www.linkedin.com/in/jorge-preisler-2b206341b/?isSelfProfile=true"
@@ -21,7 +21,7 @@ export function Footer() {
             aria-label="LinkedIn"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-ink transition-colors hover:border-accent hover:text-accent"
           >
-            <LinkedinIcon size={16} />
+            <LinkedinIcon size={18} />
           </a>
           <a
             href="https://x.com/preislerbtw"
@@ -30,19 +30,19 @@ export function Footer() {
             aria-label="X (Twitter)"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-ink transition-colors hover:border-accent hover:text-accent"
           >
-            <XIcon size={16} />
+            <XIcon size={18} />
           </a>
         </div>
 
         <nav className="flex gap-6 text-sm text-muted">
-          <a href="#sobre" className="hover:text-ink">Sobre</a>
+          <a href="#about" className="hover:text-ink">About</a>
           <a href="#skills" className="hover:text-ink">Skills</a>
-          <a href="#projetos" className="hover:text-ink">Projetos</a>
-          <a href="#contato" className="hover:text-ink">Contato</a>
+          <a href="#projects" className="hover:text-ink">Projects</a>
+          <a href="#contact" className="hover:text-ink">Contact</a>
         </nav>
 
         <p className="text-xs text-faint">
-          © {new Date().getFullYear()} Jorge Preisler. Todos os direitos reservados.
+          © {new Date().getFullYear()} Jorge Preisler. All Rights Reserved.
         </p>
       </div>
     </footer>

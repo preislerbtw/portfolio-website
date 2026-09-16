@@ -26,11 +26,11 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    label: "Banco de dados",
+    label: "Data Base",
     skills: [{ name: "MySQL", devicon: "devicon-mysql-plain colored" }],
   },
   {
-    label: "Ferramentas",
+    label: "Tools",
     skills: [
       { name: "Git", devicon: "devicon-git-plain colored" },
       { name: "Vite", devicon: "devicon-vitejs-plain colored" },
@@ -45,7 +45,7 @@ export function Skills() {
       <div className="container-page">
         <p className="eyebrow mb-3">Skills</p>
         <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
-          Tecnologias &amp; ferramentas.
+          Technologies
         </h2>
 
         <div className="mt-14 flex flex-col gap-12">
