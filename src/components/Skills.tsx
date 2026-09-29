@@ -43,7 +43,7 @@ export function Skills() {
   return (
     <section id="skills" className="border-y border-line bg-surface py-24 md:py-32">
       <div className="container-page">
-        <p className="eyebrow mb-3">Skills</p>
+        <p className="eyebrow mb-3 text-center">Skills</p>
         <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
           Technologies
         </h2>

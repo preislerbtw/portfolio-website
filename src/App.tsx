@@ -12,9 +12,9 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <About />
         <Skills />
         <Projects />
-        <About />
         <Contact />
       </main>
       <Footer />

@@ -3,10 +3,10 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <section id="projetos" className="bg-bg py-24 md:py-32">
+    <section id="projects" className="bg-bg py-24 md:py-32">
       <div className="container-page">
-        <p className="eyebrow mb-4">Projects</p>
-        {/* <h2 className="font-display max-w-xl text-4xl font-semibold leading-tight md:text-5xl">
+        <p className="eyebrow mb-4 text-center">Projects</p>
+        {/* <h2 className="font-display mx-auto max-w-xl text-center text-4xl font-semibold leading-tight md:text-5xl">
           O que eu construí.
         </h2> */}
 
