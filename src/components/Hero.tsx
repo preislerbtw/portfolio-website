@@ -7,16 +7,16 @@ export function Hero() {
       className="bg-grid bg-bg relative pt-40 pb-24 md:pt-52 md:pb-32"
     >
       <div className="container-page">
-        <h1 className="eyebrow mb-6">Frontend Developer</h1>
+        <h1 className="eyebrow mb-6">Computer Science - Web Developer</h1>
 
-        <p className="font-display max-w-2xl text-2xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-          Computer Science student passionate about front-end development and building interfaces for the web. 
+        <p className="font-display max-w-2xl text-2xl font-semibold leading-[1.05] tracking-tight md:text-4xl">
+          Computer Science student passionate about web development and building interfaces for the web. 
           {/* Eu transformo ideias em{" "} */}
           {/* <span className="text-accent">interfaces</span> que funcionam. */}
         </p>
 
         <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-          Frontend Developer focused on building clean, scalable, and modern web applications. 
+          Web Developer focused on building clean, scalable, and modern web applications. 
           I value structure, performance, and long-term maintainability over hype. 
           I'm Currently improving my skills through personal projects, coding practice, and studying modern front-end tools and frameworks.
         </p>
