@@ -10,14 +10,14 @@ export function Hero() {
         <h1 className="eyebrow mb-6">Computer Science - Web Developer</h1>
 
         <p className="font-display max-w-2xl text-2xl font-semibold leading-[1.05] tracking-tight md:text-4xl">
-          Computer Science student passionate about web development and building interfaces for the web. 
+          Computer Science student passionate about web development and building interfaces for the web.
           {/* Eu transformo ideias em{" "} */}
           {/* <span className="text-accent">interfaces</span> que funcionam. */}
         </p>
 
         <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-          Web Developer focused on building clean, scalable, and modern web applications. 
-          I value structure, performance, and long-term maintainability over hype. 
+          Web Developer focused on building clean, scalable, and modern web applications.
+          I value structure, performance, and long-term maintainability over hype.
           I'm Currently improving my skills through personal projects, coding practice, and studying modern front-end tools and frameworks.
         </p>
 
@@ -34,6 +34,16 @@ export function Hero() {
             className="rounded-full border border-line-strong px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
           >
             Get in Touch
+          </a>
+
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            download
+            className="rounded-full border border-accent bg-accent px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
+          >
+            Resume
           </a>
         </div>
 
