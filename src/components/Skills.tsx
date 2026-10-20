@@ -21,10 +21,12 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    label: "Back End",
+    label: "Back End - Learning",
     skills: [
       { name: "Java", devicon: "devicon-java-plain colored" },
       { name: "Spring Boot", devicon: "devicon-spring-original colored" },
+      { name: "Node.js", devicon: "devicon-nodejs-plain colored" },
+      { name: "Express", devicon: "devicon-express-original" },
     ],
   },
   {
@@ -39,17 +41,20 @@ const GROUPS: Group[] = [
     skills: [
       { name: "Git", devicon: "devicon-git-plain colored" },
       { name: "Vite", devicon: "devicon-vitejs-plain colored" },
-      // sem "colored" para herdar a cor do texto (o preto some no fundo escuro)
       { name: "Vercel", devicon: "devicon-vercel-original" },
       { name: "Postman", devicon: "devicon-postman-plain colored" },
-      { name: "Docker", devicon: "devicon-docker-plain colored" }
+      { name: "Insomnia", devicon: "devicon-insomnia-plain colored" },
+      { name: "Docker", devicon: "devicon-docker-plain colored" },
     ],
   },
 ];
 
 export function Skills() {
   return (
-    <section id="skills" className="border-y border-line bg-surface py-24 md:py-32">
+    <section
+      id="skills"
+      className="border-y border-line bg-surface py-24 md:py-32"
+    >
       <div className="container-page text-center">
         <p className="eyebrow mb-3">Skills</p>
         <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
