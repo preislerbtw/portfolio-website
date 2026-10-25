@@ -39,9 +39,9 @@ export function About() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-ink">English</h3>
-                  <p className="mt-1 text-sm text-muted">Currently studying</p>
+                  {/* <p className="mt-1 text-sm text-muted">Currently studying</p> */}
                   <p className="mt-1 text-xs text-muted">
-                    UFC Cultura Britânica · 4th semester
+                    UFC Cultura Britânica · 4th Semester Currently
                   </p>
                 </div>
               </div>

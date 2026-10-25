@@ -16,7 +16,7 @@ export function Header() {
     <header className="fixed top-0 left-0 z-50 w-full border-b border-line bg-surface/95 backdrop-blur">
       <div className="container-page flex h-20 items-center justify-between">
         <a href="#home" className="font-display text-lg font-semibold tracking-tight">
-          Jorge Preisler
+          Jorge <span className="text-blue-500 inline-block mt-3">Preisler.</span>
         </a>
 
         <div className="flex items-center gap-8">
