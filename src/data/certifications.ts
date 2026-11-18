@@ -18,7 +18,7 @@ export const certifications: Certification[] = [
     institution: "Udemy",
     date: "2026",
     hours: 120,
-    skills: ["HTML", "CSS", "JavaScript", "React"],
+    skills: ["HTML", "CSS", "JavaScript", "Typescript", "React"],
     image: certificateFrontend,
     credentialUrl: "/certificate-frontend.pdf",
   },
