@@ -42,7 +42,7 @@ export function Footer() {
         </nav>
 
         <p className="text-xs text-faint">
-          © {new Date().getFullYear()} Jorge Preisler. All Rights Reserved.
+          © {new Date().getFullYear()} Jorge Preisler - Ceará, Brazil
         </p>
       </div>
     </footer>
