@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { LanguageToggle } from "./LanguageToggle";
+import { useT } from "../i18n/LanguageContext";
+import type { TranslationKey } from "../i18n/translations";
 
-const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+const NAV_LINKS: { href: string; labelKey: TranslationKey }[] = [
+  { href: "#about", labelKey: "nav.about" },
+  { href: "#skills", labelKey: "nav.skills" },
+  { href: "#projects", labelKey: "nav.projects" },
+  { href: "#contact", labelKey: "nav.contact" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { t } = useT();
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-line bg-surface/95 backdrop-blur">
@@ -27,17 +31,18 @@ export function Header() {
                 href={link.href}
                 className="text-sm font-medium text-muted transition-colors hover:text-ink"
               >
-                {link.label}
+                {t(link.labelKey)}
               </a>
             ))}
           </nav>
 
           <div className="flex items-center gap-3">
+            <LanguageToggle />
             <ThemeToggle />
 
             <button
               className="text-ink md:hidden"
-              aria-label="Abrir menu"
+              aria-label={open ? t("nav.closeMenu") : t("nav.openMenu")}
               onClick={() => setOpen((v) => !v)}
             >
               {open ? <X size={24} /> : <Menu size={24} />}
@@ -55,7 +60,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="rounded-lg px-2 py-3 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink"
             >
-              {link.label}
+              {t(link.labelKey)}
             </a>
           ))}
         </nav>

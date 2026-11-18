@@ -1,6 +1,17 @@
 import { GithubIcon, LinkedinIcon, XIcon } from "./BrandIcons";
+import { useT } from "../i18n/LanguageContext";
+import type { TranslationKey } from "../i18n/translations";
+
+const NAV_LINKS: { href: string; labelKey: TranslationKey }[] = [
+  { href: "#about", labelKey: "nav.about" },
+  { href: "#skills", labelKey: "nav.skills" },
+  { href: "#projects", labelKey: "nav.projects" },
+  { href: "#contact", labelKey: "nav.contact" },
+];
 
 export function Footer() {
+  const { t } = useT();
+
   return (
     <footer className="border-t border-line bg-surface py-12">
       <div className="container-page flex flex-col items-center gap-6 text-center">
@@ -35,14 +46,15 @@ export function Footer() {
         </div>
 
         <nav className="flex gap-6 text-sm text-muted">
-          <a href="#about" className="hover:text-ink">About</a>
-          <a href="#skills" className="hover:text-ink">Skills</a>
-          <a href="#projects" className="hover:text-ink">Projects</a>
-          <a href="#contact" className="hover:text-ink">Contact</a>
+          {NAV_LINKS.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-ink">
+              {t(link.labelKey)}
+            </a>
+          ))}
         </nav>
 
         <p className="text-xs text-faint">
-          © {new Date().getFullYear()} Jorge Preisler - Ceará, Brazil
+          © {new Date().getFullYear()} Jorge Preisler - {t("footer.location")}
         </p>
       </div>
     </footer>

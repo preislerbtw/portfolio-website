@@ -1,14 +1,18 @@
 import { ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "./BrandIcons";
 import type { Project } from "../data/projects";
+import { useT } from "../i18n/LanguageContext";
 
 export function ProjectCard({ project }: { project: Project }) {
+  const { lang, t } = useT();
+  const title = project.title[lang];
+
   return (
     <article className="group flex flex-col overflow-hidden rounded-3xl border border-line bg-surface transition-colors hover:border-accent-line">
       <div className="aspect-[16/10] overflow-hidden bg-surface-2">
         <img
           src={project.image}
-          alt={`Preview do projeto ${project.title}`}
+          alt={t("projects.preview").replace("{title}", title)}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
@@ -25,9 +29,9 @@ export function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        <h3 className="font-display text-xl font-semibold">{project.title}</h3>
+        <h3 className="font-display text-xl font-semibold">{title}</h3>
         <p className="text-sm leading-relaxed text-muted">
-          {project.description}
+          {project.description[lang]}
         </p>
 
         <div className="mt-auto flex items-center justify-between border-t border-line pt-4">
@@ -46,7 +50,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noreferrer"
-                title="Ver projeto"
+                title={t("projects.view")}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong transition-colors hover:border-accent hover:text-accent"
               >
                 <ArrowUpRight size={16} />

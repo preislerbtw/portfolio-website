@@ -1,43 +1,42 @@
 import { GithubIcon, LinkedinIcon, XIcon } from "./BrandIcons";
+import { useT } from "../i18n/LanguageContext";
 
 export function Hero() {
+  const { t } = useT();
+
   return (
     <section
       id="home"
       className="bg-grid bg-bg relative pt-40 pb-24 md:pt-52 md:pb-32"
     >
       <div className="container-page text-center">
-        <h1 className="eyebrow mb-6">Computer Science - Web Developer</h1>
+        <h1 className="eyebrow mb-6">{t("hero.eyebrow")}</h1>
         <p className="font-display mx-auto max-w-2xl text-xl font-semibold leading-[1.1] tracking-tight md:text-3xl">
-          Computer Science student passionate about web development and building interfaces for the web.
+          {t("hero.title")}
         </p>
         <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-accent" />
         <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-muted">
-          Web Developer focused on building clean, scalable, and modern web applications.
-          I value structure, performance, and long-term maintainability over hype.
-          I'm Currently improving my skills through personal projects, coding practice, and studying modern tools and frameworks.
+          {t("hero.desc")}
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#projects"
             className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
           >
-            Show Projects
+            {t("hero.projects")}
           </a>
           <a
             href="#contact"
             className="rounded-full border border-line-strong px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
           >
-            Get in Touch
+            {t("hero.contact")}
           </a>
           <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            download
+            href="/JorgePreisler_Curriculo.pdf"
+            download="Jorge-Preisler-Curriculo.pdf"
             className="rounded-full border border-accent bg-accent px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
           >
-            Resume
+            {t("hero.resume")}
           </a>
         </div>
 
