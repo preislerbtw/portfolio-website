@@ -15,15 +15,15 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    slug: "flight-tracker",
-    title: "Flight Tracker",
-    description:
-      "Real-time flight tracker with an interactive map, airport weather, and aircraft information.",
-    stack: ["React", "JavaScript", "APIs", "CSS"],
-    image: project1,
-    githubUrl: "https://github.com/preislerbtw/flight-tracker",
-  },
+  // {
+  //   slug: "flight-tracker",
+  //   title: "Flight Tracker",
+  //   description:
+  //     "Real-time flight tracker with an interactive map, airport weather, and aircraft information.",
+  //   stack: ["React", "JavaScript", "APIs", "CSS"],
+  //   image: project1,
+  //   githubUrl: "https://github.com/preislerbtw/flight-tracker",
+  // },
   {
     slug: "web-photobooth",
     title: "Web Photobooth",

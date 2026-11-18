@@ -5,16 +5,15 @@ export function About() {
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="eyebrow mb-4 text-5xl">About Me</h1>
           <p className="mt-6 text-xl leading-relaxed text-muted md:text-2xl">
-            I’m a <strong>Computer Science student</strong> focused on
+            I’m a <strong>Computer Science</strong> student focused on
             Frontend Development, passionate about building modern, responsive,
-            and intuitive web experiences. I enjoy turning ideas into functional
-            interfaces, with attention to detail, usability, and performance.
+            and intuitive web experiences.
           </p>
           <p className="mt-6 text-xl leading-relaxed text-muted md:text-2xl">
             Currently, I’m expanding my knowledge of{" "}
             <strong>Backend Development</strong> to better understand how web
             applications work behind the scenes and build more complete
-            solutions. Alongside my technical studies, I’m also studying English
+            solutions. I’m also studying English
             at <strong>UFC Cultura Britânica</strong>, continuously improving my
             communication skills and broadening my horizons as a developer.
           </p>

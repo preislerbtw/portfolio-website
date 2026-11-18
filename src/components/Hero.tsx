@@ -6,17 +6,18 @@ export function Hero() {
       id="home"
       className="bg-grid bg-bg relative pt-40 pb-24 md:pt-52 md:pb-32"
     >
-      <div className="container-page">
+      <div className="container-page text-center">
         <h1 className="eyebrow mb-6">Computer Science - Web Developer</h1>
-        <p className="font-display max-w-2xl text-2xl font-semibold leading-[1.05] tracking-tight md:text-4xl">
+        <p className="font-display mx-auto max-w-2xl text-xl font-semibold leading-[1.1] tracking-tight md:text-3xl">
           Computer Science student passionate about web development and building interfaces for the web.
         </p>
-        <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
+        <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-accent" />
+        <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-muted">
           Web Developer focused on building clean, scalable, and modern web applications.
           I value structure, performance, and long-term maintainability over hype.
           I'm Currently improving my skills through personal projects, coding practice, and studying modern tools and frameworks.
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#projects"
             className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
@@ -40,7 +41,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="mt-10 flex gap-3">
+        <div className="mt-10 flex justify-center gap-3">
           <SocialIcon href="https://github.com/preislerbtw" label="GitHub">
             <GithubIcon size={18} />
           </SocialIcon>
