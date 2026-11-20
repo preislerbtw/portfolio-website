@@ -37,6 +37,7 @@ const GROUPS: Group[] = [
     skills: [
       { name: "MySQL", devicon: "devicon-mysql-plain colored" },
       { name: "MongoDB", devicon: "devicon-mongodb-plain colored" },
+      { name: "PostgreSQL", devicon: "devicon-postgresql-plain colored" },
     ],
   },
   {
@@ -48,6 +49,7 @@ const GROUPS: Group[] = [
       { name: "Postman", devicon: "devicon-postman-plain colored" },
       { name: "Insomnia", devicon: "devicon-insomnia-plain colored" },
       { name: "Docker", devicon: "devicon-docker-plain colored" },
+      { name: "Supabase", devicon: "devicon-supabase-plain colored" },
     ],
   },
 ];
